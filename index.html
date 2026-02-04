@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EMPRENDEDORES WEB AR</title>
+
+<style>
+:root{
+--primary:#4f46e5;
+--secondary:#06b6d4;
+--dark:#0f172a;
+--light:#f8fafc;
+}
+
+body{
+font-family:system-ui,Arial,sans-serif;
+margin:0;
+background:linear-gradient(180deg,#eef2ff,#ffffff);
+color:var(--dark);
+}
+
+/* HERO */
+header{
+padding:130px 20px 100px;
+text-align:center;
+background:linear-gradient(135deg,var(--primary),var(--secondary));
+color:white;
+border-radius:0 0 80px 80px;
+}
+
+.hero-container{
+max-width:1000px;
+margin:auto;
+}
+
+header h1{
+font-size:52px;
+margin-bottom:10px;
+}
+
+header p{
+font-size:20px;
+max-width:720px;
+margin:15px auto 30px;
+opacity:.95;
+}
+
+.hero-img{
+max-width:700px;
+width:100%;
+border-radius:40px;
+box-shadow:0 25px 60px rgba(0,0,0,.35);
+}
+
+/* BUTTONS */
+.btn{
+background:white;
+color:var(--primary);
+padding:15px 40px;
+border-radius:50px;
+font-weight:700;
+text-decoration:none;
+display:inline-block;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-4px);
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+.btn-secondary{
+background:var(--primary);
+color:white;
+padding:13px 30px;
+border-radius:40px;
+text-decoration:none;
+display:inline-block;
+font-weight:600;
+transition:.3s;
+}
+
+.btn-secondary:hover{
+background:#4338ca;
+transform:translateY(-3px);
+}
+
+/* SECTIONS */
+section{
+background:white;
+max-width:1000px;
+margin:80px auto;
+padding:70px 60px;
+border-radius:35px;
+box-shadow:0 18px 45px rgba(0,0,0,.12);
+}
+
+section h2{
+text-align:center;
+margin-bottom:40px;
+}
+
+/* BENEFITS */
+.benefits{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:30px;
+justify-items:center;
+text-align:center;
+}
+
+.benefit{
+padding:30px;
+border-radius:25px;
+background:var(--light);
+transition:.3s;
+}
+
+.benefit:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 35px rgba(79,70,229,.25);
+}
+
+.benefit h3{
+color:var(--primary);
+margin-bottom:10px;
+}
+
+/* PLANS */
+.plans{
+display:flex;
+gap:30px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.plan{
+background:linear-gradient(180deg,#f8f9ff,#eef2ff);
+padding:40px;
+border-radius:30px;
+text-align:center;
+max-width:320px;
+flex:1;
+border:1px solid #e0e7ff;
+transition:.35s;
+}
+
+.plan:hover{
+transform:translateY(-10px);
+box-shadow:0 25px 55px rgba(79,70,229,.35);
+}
+
+.price{
+font-size:38px;
+font-weight:800;
+color:var(--primary);
+margin:18px 0;
+}
+
+.plan ul{
+list-style:none;
+padding:0;
+text-align:left;
+}
+
+.plan ul li{
+margin-bottom:10px;
+}
+
+/* CONTACT */
+.contacts{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:18px;
+}
+
+.contact-card{
+display:flex;
+align-items:center;
+gap:12px;
+background:white;
+padding:16px 26px;
+border-radius:50px;
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+text-decoration:none;
+color:var(--dark);
+font-weight:600;
+transition:.3s;
+}
+
+.contact-card img{
+width:28px;
+}
+
+.contact-card:hover{
+transform:translateY(-4px);
+box-shadow:0 15px 35px rgba(79,70,229,.35);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+header h1{font-size:36px;}
+section{margin:30px;padding:40px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="hero-container">
+<h1>EMPRENDEDORES WEB AR</h1>
+<p>
+Creamos páginas web profesionales enfocadas en atraer clientes, generar confianza y aumentar tus ventas online.
+</p>
+
+<a class="btn" href="https://wa.me/5492241566833" target="_blank">
+Contactar por WhatsApp
+</a>
+
+<div style="margin-top:50px;">
+<img class="hero-img" src="https://images.unsplash.com/photo-1556761175-129418cb2dfe?auto=format&fit=crop&w=1000&q=80">
+</div>
+</div>
+</header>
+
+<section>
+<h2>¿Por qué elegirnos?</h2>
+
+<div class="benefits">
+<div class="benefit">
+<h3>Diseño moderno</h3>
+<p>Webs visualmente atractivas que reflejan profesionalismo.</p>
+</div>
+
+<div class="benefit">
+<h3>Optimización SEO</h3>
+<p>Tu negocio aparece en Google y atrae más clientes.</p>
+</div>
+
+<div class="benefit">
+<h3>Velocidad</h3>
+<p>Páginas rápidas que mejoran experiencia y ventas.</p>
+</div>
+
+<div class="benefit">
+<h3>Soporte cercano</h3>
+<p>Acompañamiento real durante los primeros 15 días.</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2>Nuestros planes</h2>
+
+<div class="plans">
+
+<div class="plan">
+<h3>Landing Page</h3>
+<div class="price">$50</div>
+<ul>
+<li>Diseño responsive</li>
+<li>SEO básico</li>
+<li>WhatsApp integrado</li>
+<li>Soporte 15 días</li>
+</ul>
+<a class="btn-secondary" href="https://wa.me/5492241566833" target="_blank">Contratar</a>
+</div>
+
+<div class="plan">
+<h3>Web Empresarial</h3>
+<div class="price">$75</div>
+<ul>
+<li>Diseño personalizado</li>
+<li>Hasta 5 páginas</li>
+<li>SEO avanzado</li>
+<li>Formulario de contacto</li>
+<li>Soporte 15 días</li>
+</ul>
+<a class="btn-secondary" href="https://wa.me/5492241566833" target="_blank">Contratar</a>
+</div>
+
+<div class="plan">
+<h3>Tienda Online</h3>
+<div class="price">$90</div>
+<ul>
+<li>E-commerce completo</li>
+<li>Pagos integrados</li>
+<li>Panel administrador</li>
+<li>Marketing básico</li>
+<li>Soporte 15 días</li>
+</ul>
+<a class="btn-secondary" href="https://wa.me/5492241566833" target="_blank">Contratar</a>
+</div>
+
+</div>
+</section>
+
+<section style="text-align:center;">
+<h2>Contacto</h2>
+
+<div class="contacts">
+
+<a class="contact-card" href="https://wa.me/5492241566833" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
++54 9 2241 566833
+</a>
+
+<a class="contact-card" href="https://instagram.com/emprendedoresweb.ar" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+@emprendedoresweb.ar
+</a>
+
+<a class="contact-card"
+href="mailto:emprendedoresweb.ar@gmail.com?subject=Consulta%20Web">
+<img src="https://cdn-icons-png.flaticon.com/512/732/732200.png">
+emprendedoresweb.ar@gmail.com
+</a>
+
+</div>
+</section>
+
+</body>
+</html>
